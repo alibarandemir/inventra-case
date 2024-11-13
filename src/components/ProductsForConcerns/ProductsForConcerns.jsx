@@ -7,17 +7,15 @@ import { useAppContext } from '../../Context/AppContext';
 export default function ProductsForConcerns() {
     const { userInfo } = useAppContext();
     const [concerns, setConcerns] = useState([]);
-
     useEffect(() => {
         if (userInfo) {
             setConcerns(userInfo.concerns || []);
         }
-    }, [userInfo]); // userInfo güncellendiğinde tekrar çalışır
+    }, [userInfo]); 
 
     if (!userInfo) {
         return <div>Loading</div>;
     }
-
     return (
         <div className="mt-20">
             <Title topTitle="Product for Your Concerns" subTitle="Dont worry" />

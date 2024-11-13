@@ -14,8 +14,6 @@ import Results from './components/Results/Results'
 import Articles from './components/Articles/Articles'
 
 function App() {
-  
-
   return (
     <>
     <AppProvider>
@@ -28,7 +26,7 @@ function App() {
       <SkinAnalyze/>
       <Results/>
       <Articles/>
-      </AppProvider>
+    </AppProvider>
     </>
   )
 }

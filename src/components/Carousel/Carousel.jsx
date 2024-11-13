@@ -27,9 +27,9 @@ export default function CarouselComponent({
         clickable: true,
       }}
       breakpoints={{
-        // Eğer sadece bazı ekran boyutlarında 1 slide görmek istersen, bunu buradan ayarlayabilirsin.
+        //ekran boyutlarına göre her slaytta ne kadar item gösterilecek
         1024: {
-          slidesPerView: isSingleSlide ? 1 : slidesPerView||3, // isSingleSlide kullanarak 1 slide'ı zorla
+          slidesPerView: isSingleSlide ? 1 : slidesPerView||3, 
           
         },
         768: {
